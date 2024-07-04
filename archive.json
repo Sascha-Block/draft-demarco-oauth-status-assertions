@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-07-02T00:52:53.746236+00:00",
+  "timestamp": "2024-07-04T00:52:55.423103+00:00",
   "repo": "peppelinux/draft-demarco-oauth-status-assertions",
   "labels": [
     {
@@ -1123,7 +1123,7 @@
     {
       "number": 74,
       "id": "I_kwDOK4XJ0s6L7Rw0",
-      "title": "OAuth vs SPICE Status Assertions",
+      "title": "[Draft Name Change] OAuth vs SPICE Status Assertions",
       "url": "https://github.com/peppelinux/draft-demarco-oauth-status-assertions/issues/74",
       "state": "OPEN",
       "author": "peppelinux",
@@ -1132,7 +1132,7 @@
       "labels": [],
       "body": "The current title of this draft is \"OAuth Status Assertions\".\r\n\r\nThe content of the draft is not specific to OAuth specifically. However, Status Assertions are specific to the use of Digital Credentials.\r\n\r\nIf a SPICE WG is created by the IESG (which should be known at the end of this week), the title of this document would become:\r\n\r\n    \"SPICE Status Assertions\". \r\n\r\nMore seriously, its title should rather be \"Credential Status Assertions\" or \"Digital Credential Status Assertions\".\r\n\r\n\r\nthanks to Denis.",
       "createdAt": "2024-06-12T01:24:50Z",
-      "updatedAt": "2024-06-12T01:25:31Z",
+      "updatedAt": "2024-07-02T12:58:13Z",
       "closedAt": null,
       "comments": []
     },
@@ -7358,7 +7358,7 @@
       ],
       "body": "Addressing:\r\n\r\nhttps://github.com/peppelinux/draft-demarco-oauth-status-attestations/pull/53#discussion_r1614083883\r\n\r\nThe purpose of this pull request is to define the signed information which can be conveyed to a verifier, to clarify the constraints on verifier policies.\r\n\r\nWith other status list approaches, there is an ability to communicate a single boolean, multiple boolean, or enumerations.\r\n\r\nWith our approach here, we are not limited by the bitstring data structure, so dynamic state is less constrained.\r\n\r\nThis PR also highlights the current design decision to use alg = none, to signal revocation, without providing an assertion that can be consumed by a verifier.\r\n\r\nThere may be very legitimate reasons to prefer to return unsigned information for boolean status, but for complex status, unsigned information is more dangerous to consume.\r\n\r\nI believe the specification should leave some of these decisions up to profiles.",
       "createdAt": "2024-05-25T13:19:46Z",
-      "updatedAt": "2024-06-21T23:23:06Z",
+      "updatedAt": "2024-07-02T15:34:09Z",
       "baseRepository": "peppelinux/draft-demarco-oauth-status-assertions",
       "baseRefName": "main",
       "baseRefOid": "73316fd7e515056d54a3d8043d39a2f3a4ae7141",
@@ -7990,6 +7990,44 @@
           "createdAt": "2024-06-21T23:23:06Z",
           "updatedAt": "2024-06-21T23:23:06Z",
           "comments": []
+        },
+        {
+          "id": "PRR_kwDOK4XJ0s6AZpZk",
+          "commit": {
+            "abbreviatedOid": "465dcbb"
+          },
+          "author": "peppelinux",
+          "authorAssociation": "OWNER",
+          "state": "CHANGES_REQUESTED",
+          "body": "",
+          "createdAt": "2024-07-02T15:33:25Z",
+          "updatedAt": "2024-07-02T15:34:09Z",
+          "comments": [
+            {
+              "originalPosition": 49,
+              "body": "`credential_status_detail` missing here\r\n\r\nFYI here I propose also `credential_status` -> `credential_status_detail`\r\n\r\n@fmarino-ipzs ^",
+              "createdAt": "2024-07-02T15:33:25Z",
+              "updatedAt": "2024-07-02T15:34:09Z"
+            },
+            {
+              "originalPosition": 82,
+              "body": "```suggestion\r\n    \"credential_status_detail\": {\r\n```",
+              "createdAt": "2024-07-02T15:33:40Z",
+              "updatedAt": "2024-07-02T15:34:09Z"
+            },
+            {
+              "originalPosition": 114,
+              "body": "```suggestion\r\n    \"credential_status_detail\": {\r\n```",
+              "createdAt": "2024-07-02T15:33:49Z",
+              "updatedAt": "2024-07-02T15:34:09Z"
+            },
+            {
+              "originalPosition": 145,
+              "body": "```suggestion\r\n    \"credential_status_detail\": {\r\n```",
+              "createdAt": "2024-07-02T15:33:56Z",
+              "updatedAt": "2024-07-02T15:34:09Z"
+            }
+          ]
         }
       ]
     },
