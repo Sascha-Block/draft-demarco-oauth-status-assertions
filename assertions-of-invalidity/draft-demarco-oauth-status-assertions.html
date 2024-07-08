@@ -1039,7 +1039,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 </tr></thead>
 <tfoot><tr>
 <td class="left">Marco, et al.</td>
-<td class="center">Expires 5 January 2025</td>
+<td class="center">Expires 9 January 2025</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1052,12 +1052,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dd class="internet-draft">draft-demarco-oauth-status-assertions-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2024-07-04" class="published">4 July 2024</time>
+<time datetime="2024-07-08" class="published">8 July 2024</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Informational</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2025-01-05">5 January 2025</time></dd>
+<dd class="expires"><time datetime="2025-01-09">9 January 2025</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1118,7 +1118,7 @@ without requiring to query any third-party entities.<a href="#section-abstract-1
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 5 January 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 9 January 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -2277,8 +2277,8 @@ variety of scenarios.<a href="#section-13-1" class="pilcrow">¶</a></p>
 This enables Verifier policies to be conditioned on the presence of secured information, instead of the absence of information.
 This section proposes syntax to support detailed assertions.
 The <code>credential_status_validity</code> claim <span class="bcp14">MUST</span> be present and be either <code>true</code> or <code>false</code>.
-The <code>credential_status</code> claim <span class="bcp14">MAY</span> be present and if present <span class="bcp14">MUST</span> be an object.
-The semantics of the claims within the <code>credential_status</code> object are determined by the Credential Issuer.<a href="#section-14-1" class="pilcrow">¶</a></p>
+The <code>credential_status_detail</code> claim <span class="bcp14">MAY</span> be present and if present <span class="bcp14">MUST</span> be an object.
+The semantics of the claims within the <code>credential_status_detail</code> object are determined by the Credential Issuer.<a href="#section-14-1" class="pilcrow">¶</a></p>
 <p id="section-14-2">An example of a boolean status is:<a href="#section-14-2" class="pilcrow">¶</a></p>
 <div class="alignLeft art-text artwork" id="section-14-3">
 <pre>
@@ -2575,6 +2575,21 @@ IANA "JSON Web Token Claims" registry <span>[<a href="#IANA.JWT" class="cite xre
 </li>
           <li class="normal" id="section-17.1-4.4">
             <p id="section-17.1-4.4.1">Specification Document(s): <span><a href="#status-assertion" class="internal xref">this specification</a> (<a href="#status-assertion" class="auto internal xref">Section 10</a>)</span><a href="#section-17.1-4.4.1" class="pilcrow">¶</a></p>
+</li>
+        </ul>
+<p id="section-17.1-5"><br></p>
+<ul class="normal">
+<li class="normal" id="section-17.1-6.1">
+            <p id="section-17.1-6.1.1">Claim Name: <code>credential_status_detail</code><a href="#section-17.1-6.1.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="normal" id="section-17.1-6.2">
+            <p id="section-17.1-6.2.1">Claim Description: New status information provided by the Issuer.<a href="#section-17.1-6.2.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="normal" id="section-17.1-6.3">
+            <p id="section-17.1-6.3.1">Change Controller: IETF<a href="#section-17.1-6.3.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="normal" id="section-17.1-6.4">
+            <p id="section-17.1-6.4.1">Specification Document(s): <span><a href="#status-assertion" class="internal xref">this specification</a> (<a href="#status-assertion" class="auto internal xref">Section 10</a>)</span><a href="#section-17.1-6.4.1" class="pilcrow">¶</a></p>
 </li>
         </ul>
 </section>

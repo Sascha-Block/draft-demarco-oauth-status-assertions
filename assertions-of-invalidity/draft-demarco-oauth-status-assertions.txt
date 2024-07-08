@@ -5,10 +5,10 @@
 Network Working Group                                        G. D. Marco
 Internet-Draft               Dipartimento per la trasformazione digitale
 Intended status: Informational                                 O. Steele
-Expires: 5 January 2025                                        Transmute
+Expires: 9 January 2025                                        Transmute
                                                                F. Marino
                                 Istituto Poligrafico e Zecca dello Stato
-                                                             4 July 2024
+                                                             8 July 2024
 
 
                         OAuth Status Assertions
@@ -52,7 +52,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 5 January 2025.
+   This Internet-Draft will expire on 9 January 2025.
 
 Copyright Notice
 
@@ -942,9 +942,10 @@ Content-Type: application/json
    secured information, instead of the absence of information.  This
    section proposes syntax to support detailed assertions.  The
    credential_status_validity claim MUST be present and be either true
-   or false.  The credential_status claim MAY be present and if present
-   MUST be an object.  The semantics of the claims within the
-   credential_status object are determined by the Credential Issuer.
+   or false.  The credential_status_detail claim MAY be present and if
+   present MUST be an object.  The semantics of the claims within the
+   credential_status_detail object are determined by the Credential
+   Issuer.
 
    An example of a boolean status is:
 
@@ -1195,6 +1196,16 @@ Content-Type: application/json
 
    *  Claim Description: The Algorithm used of hashing the Digital
       Credential to which the Status Assertion is bound.
+
+   *  Change Controller: IETF
+
+   *  Specification Document(s): this specification (Section 10)
+
+
+
+   *  Claim Name: credential_status_detail
+
+   *  Claim Description: New status information provided by the Issuer.
 
    *  Change Controller: IETF
 
